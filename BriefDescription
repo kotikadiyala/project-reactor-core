@@ -1,0 +1,26 @@
+Brief Description
+
+1) Why Project Reactor is used
+
+A) Basically as per my understanding java itself, does not support non-blocking asynchronus programming.
+   We have to use Future / CompletableFuture, but still they are not non-blocking.
+   We have to block them for retrieving the result.
+
+   Hence we need to go far Reactive Streams.
+
+   Reactive Streams are non blocking where as java streams are blocking
+   Reactive programming is declarative where as java programming is imperative
+
+   And therefore, in real time operations where data is emited in very large quantities, if blocking streams are used,
+   the performance of the application / project would not be ideal. Hence we need to go for Reactive Streams for
+   robust and speedy performance.
+
+2) What are the main reactive streams
+
+A) Flux and Mono are 2 Reactive Streams.
+
+   Flux emits 0 to N elements asynchronously where as Mono emits 0 to 1 elements asynchronously .
+
+ 3) Where reference documentation and git examples are provided for Project Reactor ?
+
+ A) https://projectreactor.io/
